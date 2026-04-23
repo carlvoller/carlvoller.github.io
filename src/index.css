@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Montserrat", sans-serif;
+  --font-primary-mono: "Montserrat", monospace;
+  --front-secondary: 'Courier Prime', sans-serif;
+}
+
+@theme {
+  --color-primary: #151515;
+  --color-secondary: #A0A0A0;
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #f0f0ea;
+}
+
+@utility fade-up {
+  opacity: 0;
+  translate: 0 28px;
+  transition: opacity 0.7s ease, translate 0.7s ease;
+}
+
+@utility fade-up-visible {
+  opacity: 1;
+  translate: 0 0;
+}
